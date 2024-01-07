@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 33.3%;
+  height: auto;
+  /* margin-top: 10px ; */
+  /* margin-right: 10px ; */
+  margin-bottom: 10px;
+  /* margin-left: 10px ; */
+  /* margin: 10px; */
+  /* margin: 10px 20px 10px 20px; */
+  /* margin: 10px 20px; */
+  /* margin: 10px 30px 50px; */
+  /* padding: 10px 20px 30px 49px; */
+  float: left;
+  border: 10px solid blue;
+}
+
+.box:nth-child(odd) {
+  background-color: purple;
+}
+
+.box:nth-child(even) {
+  background-color: red;
+}
+
+#header {
+  background: linear-gradient(#efefef, red, blue, purple);
+  background: radial-gradient(#efefef, red, blue, purple);
+  /* background-image: url('./transparent.gif');
+  background-repeat: no-repeat;
+  background-size: 50% 70%, cover;
+  background-position: top left;
+  background-position: top center;
+  background-position: top right;
+  background-position: center left;
+  background-position: center center;
+  background-position: center right;
+  background-position: bottom left;
+  background-position: bottom center;
+  background-position: bottom right;
+  background-position: right;
+  background-position: 80% 50%; */
+  /* background: #efefef url('./transparent.gif') no-repeat center center/cover; */
+  background: radial-gradient(rgba(255, 0, 0, 0.9), rgba(0, 0, 255, 0.8), green),
+    url('https://img.freepik.com/free-vector/colorful-background-concept_23-2148452453.jpg')
+      no-repeat center center/cover;
+  padding: 40px 30px;
+  width: 100%;
+  height: 100vh;
+}
+
+#header h1 {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: left;
+  text-align: center;
+  text-align: right;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  border-color: blue;
+  border-width: 10px;
+  border: 10px dotted #333;
+}
+
+#header .content {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#header button {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+#header button:hover {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+#sec {
+  background-color: lightcoral;
+  color: #333;
+}
+
+#sec .content {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: burlywood;
+}
+
+#sec .content a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.5s cubic-bezier(0.1, 1.56, 0.87, -0.9);
+}
+
+#sec .content a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
