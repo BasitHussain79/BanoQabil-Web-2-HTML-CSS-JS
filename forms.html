@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The complete guide of HTML Forms" />
+    <meta name="keywords" content="HTML, Forms, CSS" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World Forms</h1>
+
+    <!-- <form>
+      <input
+        type="text"
+        placeholder="First Name"
+        minlength="3"
+        maxlength="6"
+        required
+      />
+      <br />
+      <input
+        type="text"
+        placeholder="Last Name"
+        minlength="3"
+        maxlength="6"
+        required
+      />
+      <br />
+      <input
+        type="email"
+        placeholder="Email"
+        minlength="6"
+        maxlength="8"
+        required
+      />
+      <br />
+      <input
+        type="password"
+        placeholder="Password"
+        minlength="6"
+        maxlength="12"
+        required
+      />
+      <br />
+      <input type="number" placeholder="amount" min="9" max="100" required />
+      <br />
+      <input
+        type="date"
+        placeholder="DOB"
+        min="2023-06-01"
+        max="2023-12-23"
+        required
+      />
+      <button type="submit">Submit</button>
+      <input type="submit" value="Sign up" />
+      <br />
+      <button type="reset">Reset</button>
+      <input type="reset" value="Reset" />
+    </form> -->
+
+    <form>
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        placeholder="First Name"
+        value="Basit Hussain"
+        minlength="3"
+        maxlength="6"
+        id="fname"
+      />
+      <input
+        type="email"
+        placeholder="abc@test.com"
+        minlength="6"
+        maxlength="20"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        minlength="6"
+        maxlength="20"
+      />
+      <input type="number" placeholder="amount" min="6" max="20" />
+      <input type="date" min="2023-06-05" max="2023-12-24" />
+      <input type="file" accept=".pdf,.txt,.xlsx,.docx" />
+
+      <input type="radio" name="gender" value="male" checked id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" disabled value="other" id="other" />
+      <label for="other">Other</label>
+
+      <select>
+        <option value="Select" disabled>Select</option>
+        <option value="item1">Item 1</option>
+        <option value="item2" selected>Item 2</option>
+      </select>
+
+      <input type="checkbox" name="option" id="option1" />
+      <label for="option1">Option 1</label>
+      <input type="checkbox" name="option2" id="option2" />
+      <label for="option2">Option 2</label>
+      <input type="checkbox" name="option2" id="option3" />
+      <label for="option3">Option 3</label>
+
+      <hr />
+
+      <select name="instruments" size="3" multiple="multiple">
+        <option value="guitar" selected="selected">Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="keyboard" selected="selected">Keyboard</option>
+        <option value="bass">Bass</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
